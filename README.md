@@ -53,6 +53,10 @@ Here's a walkthrough of implemented required features:
 
 <img src='https://github.com/Itsurguy2/Spatium_Lux/blob/main/frontend/src/Assets/Spatium_lux.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<img src='https://github.com/Itsurguy2/Spatium_Lux/blob/main/frontend/src/Assets/Spatium_lux2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+https://github.com/Itsurguy2/Spatium_Lux/blob/main/frontend/src/Assets/Spatium_lux2.gif
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
 <!-- Recommended tools:
