@@ -1,0 +1,175 @@
+.themed-page-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideInFromTop 0.6s ease;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.location-emoji {
+  font-size: 48px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.location-info h2 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 28px;
+}
+
+.location-info p {
+  margin: 5px 0 0 0;
+  color: var(--text-color);
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.style-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: 2px solid var(--border-color);
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.style-icon {
+  font-size: 24px;
+}
+
+.themed-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ocean waves animation */
+.ocean-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(79, 172, 254, 0.3), transparent);
+  animation: wave 10s linear infinite;
+}
+
+.wave1 {
+  animation-delay: 0s;
+  opacity: 0.3;
+}
+
+.wave2 {
+  animation-delay: -5s;
+  opacity: 0.2;
+}
+
+.wave3 {
+  animation-delay: -2.5s;
+  opacity: 0.1;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(-25%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* Snow particles */
+.snow-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  font-size: 20px;
+  animation: falling linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes falling {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* Desert heat shimmer */
+.heat-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.03) 2px,
+    rgba(255, 255, 255, 0.03) 4px
+  );
+  animation: shimmer 4s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}

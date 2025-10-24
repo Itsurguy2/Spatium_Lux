@@ -1,0 +1,173 @@
+.house-preview {
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.preview-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.preview-header h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.location-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+}
+
+.house-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landscape {
+  font-size: 32px;
+  margin-bottom: 20px;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+.house-structure {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.roof {
+  width: 200px;
+  height: 80px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.roof-gable {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.roof-hip {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.roof-flat {
+  clip-path: polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.roof-mansard {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 60%, 100% 100%, 0% 100%, 0% 60%);
+}
+
+.roof-gambrel {
+  clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0% 100%, 0% 40%);
+}
+
+.roof-shed {
+  clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.house-body {
+  width: 200px;
+  height: 180px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.windows {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.window {
+  width: 40px;
+  height: 40px;
+  background: #87CEEB;
+  border: 3px solid #333;
+  border-radius: 4px;
+}
+
+.door {
+  width: 50px;
+  height: 70px;
+  background: #654321;
+  border: 3px solid #333;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.garage {
+  width: 120px;
+  height: 140px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.garage-door {
+  width: 80%;
+  height: 60%;
+  background: #696969;
+  border: 3px solid #333;
+  margin: 40px auto 0;
+  border-radius: 4px;
+}
+
+.amenities {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pool, .deck {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.style-badge {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
